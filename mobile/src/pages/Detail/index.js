@@ -12,7 +12,7 @@ export default function Detail() {
     const navigation = useNavigation();
     const route = useRoute();
     const incident = route.params.incident;
-    const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no ${incident.title} com o valor de ${Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(incident.value)}`
+    const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso ${incident.title} com o valor de ${Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(incident.value)}`
 
     function navigateBack() {
         navigation.goBack()
